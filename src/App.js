@@ -1,23 +1,59 @@
-import logo from './logo.svg';
+// import React, {useState,useEffect} from "react";
+import React from 'react';
+import Persons from './OBJECTIVE/Person';
+import PersonInput from './OBJECTIVE/PersonInput'
 import './App.css';
+// import Header from "./component/Header";
+// import AddContact from './component/AddContact';
+// import ContactList from './component/ContactList';
+
+
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  // const [Data,setData] = useState([])
+
+  // const Datas=[{
+  //   "username":"Temple",
+  //   "message":"you are welcome to auchipoly for the first of this year"
+//   // }]
+//   const localkey = 'Data';
+
+// const addcontacthandle = (data)=>{
+//   // console.log(data)
+//   setData(...Data, data)
+// }
+// useEffect(()=>{
+// localStorage.setItem(localkey,JSON.stringify(Data))
+// },[Data])
+
+//   return (
+//     <div>
+// <Header />
+
+
+
+// <div className="container">
+
+// <AddContact addprops={addcontacthandle} />
+// <ContactList datas={Data}/>
+
+return (
+
+<div>
+  <PersonInput />
+<Persons />
+
+
+
+
+
+
+
+  
+
+
+
     </div>
   );
 }
